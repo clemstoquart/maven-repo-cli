@@ -1,0 +1,16 @@
+{
+  "name": "maven-repo-cli",
+  "version": "1.0.0",
+  "description": "Cli tool that checks latest available version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clement Stoquart",
+  "license": "ISC",
+  "bin": "./index.js",
+  "dependencies": {
+    "axios": "0.18.0",
+    "commander": "2.16.0"
+  }
+}

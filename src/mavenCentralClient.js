@@ -13,7 +13,9 @@ async function getDependencyVersion(groupId, arctifactId) {
 
         return jsonMetadata.metadata.versioning.latest;
     } catch (error) {
-        console.error(`Error while retrieving version for ${groupId} ${arctifactId} : ${error}`);
+        if (error.response.status !== 404) {
+            console.error(`Error while retrieving version for ${groupId} ${arctifactId} : ${error}`);
+        }
     }
 }
 

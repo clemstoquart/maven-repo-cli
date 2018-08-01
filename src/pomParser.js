@@ -23,16 +23,17 @@ async function _buildReport(pomObject) {
         allPomDependencies.push(pomObject.project.parent);
     }
 
-    for (const dependency of allPomDependencies) {
-        const latestVersion = await mavenCentralClient.getDependencyVersion(dependency.groupid, dependency.artifactid);
+    const promises = allPomDependencies.map(dependency => mavenCentralClient.getDependencyVersion(dependency.groupid, dependency.artifactid));
+    const latestVersions = await Promise.all(promises);
 
+    for (const [index, dependency] of allPomDependencies.entries()) {
         let currentVersion = dependency.version;
         if (currentVersion && currentVersion.includes('${')) {
             currentVersion = versionByArtifactId.get(dependency.version);
         }
 
-        if (currentVersion && (latestVersion > currentVersion)) {
-            outdatedDependencies.push([`${dependency.groupid} ${dependency.artifactid}`, currentVersion, latestVersion]);
+        if (currentVersion && (latestVersions[index] > currentVersion)) {
+            outdatedDependencies.push([`${dependency.groupid} ${dependency.artifactid}`, currentVersion, latestVersions[index]]);
         }
     }
 

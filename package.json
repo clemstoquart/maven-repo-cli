@@ -4,13 +4,20 @@
   "description": "Cli tool that checks latest available version",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
   },
   "author": "Clement Stoquart",
   "license": "ISC",
-  "bin": "./index.js",
+  "bin": "./src/index.js",
   "dependencies": {
     "axios": "0.18.0",
-    "commander": "2.16.0"
+    "cli-table3": "0.5.1",
+    "commander": "2.16.0",
+    "pom-parser": "1.1.1",
+    "xml2json": "0.11.2"
+  },
+  "devDependencies": {
+    "eslint": "5.2.0"
   }
 }

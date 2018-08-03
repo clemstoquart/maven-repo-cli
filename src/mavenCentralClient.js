@@ -13,8 +13,12 @@ async function getDependencyVersion(groupId, arctifactId) {
 
         return jsonMetadata.metadata.versioning.latest;
     } catch (error) {
-        if (error.response.status !== 404) {
-            console.error(`Error while retrieving version for ${groupId} ${arctifactId} : ${error}`);
+        if (error.code === 'ENOTFOUND') {
+            console.error(`Can't reach maven repository for ${groupId} ${arctifactId} : ${error}`);
+        }
+
+        if (error.response && error.response.status !== 404) {
+            console.error(`Artifact ${groupId} ${arctifactId} not found`);
         }
     }
 }

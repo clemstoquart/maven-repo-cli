@@ -18,7 +18,14 @@ async function _buildReport(pomObject) {
 
     const versionByArtifactId = _buildExternalVersionsMap(pomObject); // holds versions from properties block
 
-    const allPomDependencies = pomObject.project.dependencies.dependency;
+    let allPomDependencies;
+    if (pomObject.project.dependencies) {
+        allPomDependencies = pomObject.project.dependencies.dependency;
+    } else {
+        // multi-module with dependencyManagement
+        allPomDependencies = pomObject.project.dependencymanagement.dependencies.dependency;
+    }
+
     if (pomObject.project.parent) {
         allPomDependencies.push(pomObject.project.parent);
     }

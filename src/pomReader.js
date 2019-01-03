@@ -1,6 +1,6 @@
 'use strict';
 
-const pomParser = require('pom-parser');
+const pomParser = require('./parser/pomParser');
 const mavenCentralClient = require('./mavenCentralClient');
 const reporter = require('./reporter');
 

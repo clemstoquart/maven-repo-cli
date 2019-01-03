@@ -3,7 +3,7 @@
 
 const program = require('commander');
 const mavenCentralClient = require('./mavenCentralClient');
-const pomParser = require('./pomParser');
+const pomParser = require('./pomReader');
 
 program
     .version('1.0.0')

@@ -14,10 +14,11 @@
     "axios": "0.18.0",
     "cli-table3": "0.5.1",
     "commander": "2.19.0",
-    "pom-parser": "1.1.1",
+    "traverse": "0.6.6",
+    "xml2js": "0.4.19",
     "xml2json": "0.11.2"
   },
   "devDependencies": {
-    "eslint": "5.10.0"
+    "eslint": "5.11.1"
   }
 }

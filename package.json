@@ -1,14 +1,14 @@
 {
   "name": "maven-repo-cli",
   "version": "1.0.0",
-  "description": "Cli tool that checks latest available version",
+  "description": "Cli tool that checks latest available versions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src"
   },
   "author": "Clement Stoquart",
-  "license": "ISC",
+  "license": "MPL-2.0",
   "bin": "./src/index.js",
   "dependencies": {
     "axios": "0.18.0",

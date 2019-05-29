@@ -9,11 +9,11 @@ Nodejs 10 is required.
 
 ## Setup
 
-    npm i
+    yarn install
     
 ## Make it a regular cli tool
 
-    npm link
+    yarn link
     
 Then
 

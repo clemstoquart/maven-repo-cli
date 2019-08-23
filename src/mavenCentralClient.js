@@ -1,7 +1,7 @@
 'use strict';
 
 const axios = require('axios');
-const xml = require('xml2json');
+const xmlJs = require('xml-js');
 
 async function getDependencyVersion(groupId, arctifactId) {
     try {
@@ -9,9 +9,9 @@ async function getDependencyVersion(groupId, arctifactId) {
 
         const mavenXmlMetadata = await axios.get(url);
 
-        const jsonMetadata = JSON.parse(xml.toJson(mavenXmlMetadata.data));
+        const mavenMetadata = xmlJs.xml2js(mavenXmlMetadata.data, { compact: true });
 
-        return jsonMetadata.metadata.versioning.latest;
+        return mavenMetadata.metadata.versioning.latest._text;
     } catch (error) {
         if (error.code === 'ENOTFOUND') {
             console.error(`Can't reach maven repository for ${groupId} ${arctifactId} : ${error}`);

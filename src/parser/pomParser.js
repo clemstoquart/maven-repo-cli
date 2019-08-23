@@ -57,8 +57,6 @@ module.exports.parse = (opt, callback) => {
 /**
  * Parses the given xml content.
  * @param xmlContent {string} Is the xml content in string using utf-8 format.
- * @param loadedXml {boolean} Whether the xml was loaded from the file-system.
- * @param callback {function} The callback function using Javascript PCS.
  */
 function _parseWithXml2js(xmlContent) {
     return new Promise((resolve, reject) => {
@@ -83,7 +81,7 @@ function _parseWithXml2js(xmlContent) {
 
 /**
  * Removes all the arrays with single elements with a string value.
- * @param {object} o is the object to be traversed.
+ * @param {object} obj is the object to be traversed.
  */
 function removeSingleArrays(obj) {
     // Traverse all the elements of the object

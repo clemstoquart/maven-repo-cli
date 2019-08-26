@@ -69,7 +69,7 @@ export class PomReader {
         }
 
         const promises = allPomDependencies.map(dependency => this.mavenCentralClient.getDependencyVersion(dependency.groupid, dependency.artifactid));
-        const latestVersions = await Promise.all(promises) as string[];
+        const latestVersions = await Promise.all(promises);
 
         for (const [index, dependency] of allPomDependencies.entries()) {
             let currentVersion: string | undefined = dependency.version;

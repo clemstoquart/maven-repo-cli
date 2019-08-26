@@ -11,6 +11,7 @@ interface Versioning {
 
 interface Metadata {
     versioning: Versioning;
+    version: Latest;
 }
 
 interface MavenMetadata {
@@ -19,7 +20,7 @@ interface MavenMetadata {
 
 export class MavenCentralClient {
 
-    public async getDependencyVersion(groupId: string, arctifactId: string): Promise<string | undefined> {
+    public async getDependencyVersion(groupId: string, arctifactId: string): Promise<string> {
         try {
             const url = `https://repo.maven.apache.org/maven2/${groupId.replace(/\./g, '/')}/${arctifactId}/maven-metadata.xml`;
 
@@ -27,7 +28,7 @@ export class MavenCentralClient {
 
             const mavenMetadata = xmlJs.xml2js(mavenXmlMetadata.data, { compact: true }) as MavenMetadata;
 
-            return mavenMetadata.metadata.versioning.latest._text;
+            return MavenCentralClient.findLatestVersion(mavenMetadata.metadata);
         } catch (error) {
             if (error.code === 'ENOTFOUND') {
                 console.error(`Can't reach maven repository for ${groupId} ${arctifactId} : ${error}`);
@@ -36,6 +37,20 @@ export class MavenCentralClient {
             if (error.response && error.response.status !== 404) {
                 console.error(`Artifact ${groupId} ${arctifactId} not found`);
             }
+
+            if (error.message) {
+                console.error(`Error finding version for ${groupId} ${arctifactId} : ${error.message}`);
+            }
+
+            return '';
+        }
+    }
+
+    private static findLatestVersion(metadata: Metadata): string {
+        if (metadata.versioning.latest != undefined) {
+            return metadata.versioning.latest._text;
+        } else {
+            return metadata.version._text;
         }
     }
 }

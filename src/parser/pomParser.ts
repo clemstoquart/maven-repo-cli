@@ -6,11 +6,6 @@ import xml2js, { OptionsV2 } from 'xml2js';
 import traverse from 'traverse';
 import { PomWrapper } from '../pomReader';
 
-export interface XmlToParse {
-    xmlContent?: string;
-    filePath: string;
-}
-
 // xmljs options https://github.com/Leonidas-from-XIV/node-xml2js#options
 const XML2JS_OPTS: OptionsV2 = {
     trim: true,
@@ -26,16 +21,14 @@ export class PomParser {
      * @param {string} filePath the filePath of the pom
      * @return {object} The pom object along with the timers.
      */
-    public async parse(filePath: string): Promise<PomWrapper | undefined> {
+    public async parse(filePath: string): Promise<PomWrapper> {
         try {
             const xmlContent = await fs.readFile(filePath, 'utf8');
 
             return await this.parseWithXml2js(xmlContent);
         } catch (err) {
-            if (err) {
-                console.log(`ERROR: ${err}`);
-                process.exit(1);
-            }
+            console.log(`ERROR: ${err}`);
+            return process.exit(1);
         }
     }
 

@@ -10,7 +10,7 @@
   },
   "author": "Clement Stoquart",
   "license": "MPL-2.0",
-  "bin": "./src/index.js",
+  "bin": "./lib/index.js",
   "dependencies": {
     "axios": "0.19.0",
     "cli-table3": "0.5.1",

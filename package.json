@@ -4,8 +4,9 @@
   "description": "Cli tool that checks latest available versions",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src"
+    "lint": "eslint \"src/**/*.ts\""
   },
   "author": "Clement Stoquart",
   "license": "MPL-2.0",
@@ -19,6 +20,12 @@
     "xml2js": "0.4.19"
   },
   "devDependencies": {
-    "eslint": "6.2.1"
+    "@types/node": "12.7.2",
+    "@types/traverse": "0.6.32",
+    "@types/xml2js": "0.4.4",
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "eslint": "6.2.1",
+    "typescript": "3.5.3"
   }
 }

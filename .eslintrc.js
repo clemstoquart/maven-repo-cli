@@ -1,13 +1,15 @@
 module.exports = {
-    "env": {
+    parser:  '@typescript-eslint/parser',
+    env: {
         "node": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 2017
+    extends: 'plugin:@typescript-eslint/recommended',
+    parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module'
     },
-    "rules": {
+    rules: {
         "indent": [
             "error",
             4

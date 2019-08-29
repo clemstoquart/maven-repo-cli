@@ -6,15 +6,12 @@ jobs:
     name: Node 12
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-
     steps:
       - name: Clone repository
         uses: actions/checkout@master
 
       - name: Set Node.js version
-        uses: actions/setup-node@v1.1.0
+        uses: actions/setup-node@master
         with:
           version: 12
       

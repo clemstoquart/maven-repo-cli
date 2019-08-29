@@ -1,4 +1,4 @@
-# Maven repository cli
+# Maven repository cli test
 
 [![Build Status](https://travis-ci.org/clemstoquart/maven-repo-cli.svg?branch=master)](https://travis-ci.org/clemstoquart/maven-repo-cli)
 

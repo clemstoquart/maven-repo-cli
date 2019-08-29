@@ -1,7 +1,5 @@
 # Maven repository cli
 
-[![Build Status](https://travis-ci.org/clemstoquart/maven-repo-cli.svg?branch=master)](https://travis-ci.org/clemstoquart/maven-repo-cli)
-
 ## Requirements
 
 Nodejs 12 is required.

@@ -13,7 +13,7 @@ jobs:
       - name: Set Node.js version
         uses: actions/setup-node@master
         with:
-          version: 12
+          node-version: 12
       
       - name: Install yarn
         run: npm i yarn -g

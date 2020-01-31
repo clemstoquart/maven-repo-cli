@@ -16,13 +16,13 @@ jobs:
           node-version: 12
       
       - name: Install yarn
-        run: npm i yarn -g
+        run: npm i yarn@berry -g
 
       - run: node --version
       - run: yarn --version
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Lint
         run: yarn lint

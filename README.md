@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Nodejs 12 is required.
+Nodejs 12 and Yarn 2 (berry) are required.
 
 ## Setup
 

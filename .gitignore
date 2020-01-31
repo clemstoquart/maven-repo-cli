@@ -114,3 +114,5 @@ typings/
 .next
 
 /lib/
+
+.yarn

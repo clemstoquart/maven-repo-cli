@@ -20,12 +20,12 @@
     "xml2js": "0.4.23"
   },
   "devDependencies": {
-    "@types/node": "12.12.17",
+    "@types/node": "12.12.30",
     "@types/traverse": "0.6.32",
     "@types/xml2js": "0.4.5",
-    "@typescript-eslint/eslint-plugin": "2.19.2",
-    "@typescript-eslint/parser": "2.19.2",
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
     "eslint": "6.8.0",
-    "typescript": "3.7.5"
+    "typescript": "3.8.3"
   }
 }

@@ -60,7 +60,7 @@ export class PomParser {
      * Removes all the arrays with single elements with a string value.
      * @param {object} obj is the object to be traversed.
      */
-    private removeSingleArrays(obj: object): void {
+    private removeSingleArrays(obj: Record<string, unknown>): void {
         // Traverse all the elements of the object
         traverse(obj).forEach(function traversing(value) {
             // As the XML parser returns single fields as arrays.

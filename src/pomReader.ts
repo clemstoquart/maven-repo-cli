@@ -18,7 +18,7 @@ interface DependencyManagement {
 
 interface Project {
     parent: Dependency;
-    properties: object;
+    properties: Record<string, unknown>;
     dependencymanagement: DependencyManagement;
     dependencies: Dependencies;
 }

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Nodejs 12 and Yarn 2 (berry) are required.
+Nodejs 12 and Yarn 1.22+ are required.
 
 ## Setup
 
@@ -20,11 +20,11 @@ Compiled to javascript files are available in the `lib` folder.
 
 You can see all available commands running :
 
-    node lib/index.js -help
+    yarn node lib/index.js -help
 
 For example :
 
-    node lib/index.js checkPom ~/projects/my-project/pom.xml
+    yarn node lib/index.js checkPom ~/projects/my-project/pom.xml
 
 ## Lint
 

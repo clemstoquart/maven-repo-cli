@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Nodejs 12 and Yarn 1.22+ are required.
+Nodejs 14 and Yarn 1.22+ are required.
 
 ## Setup
 

@@ -115,6 +115,9 @@ typings/
 
 /lib/
 
-.yarn
+.yarn/cache
+.yarn/plugins
+.yarn/install-state.gz
 .pnp.*
-.yarnrc.yml
+
+.DS_Store

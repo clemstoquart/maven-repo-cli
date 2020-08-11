@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   run:
-    name: Node 12
+    name: Lint and build
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
           node-version: 12
       
       - name: Install yarn
-        run: npm i yarn@berry -g
+        run: npm i -g yarn
 
       - run: node --version
       - run: yarn --version

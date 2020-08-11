@@ -53,10 +53,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.12.54":
-  version: 12.12.54
-  resolution: "@types/node@npm:12.12.54"
-  checksum: 9e6ff179fd8b5118f353f8ed4a16eea105636414557cb6acee40325c26c00d7d54e2cb5a5f18778ecfc820c964f09673c16de67e2b55283fc64c5283685c1055
+"@types/node@npm:14.0.27":
+  version: 14.0.27
+  resolution: "@types/node@npm:14.0.27"
+  checksum: 54ecf408eb94f44685e12ef395d8d9d5789cb9e209f171153b6b951272af6b8da099778d09d66454aa5d35ce246f3922ebd7476ed768bf3bd4267306c12a6703
   languageName: node
   linkType: hard
 
@@ -869,7 +869,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "maven-repo-cli@workspace:."
   dependencies:
-    "@types/node": 12.12.54
+    "@types/node": 14.0.27
     "@types/traverse": 0.6.32
     "@types/xml2js": 0.4.5
     "@typescript-eslint/eslint-plugin": 3.9.0

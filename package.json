@@ -13,7 +13,7 @@
   "bin": "./lib/index.js",
   "dependencies": {
     "axios": "0.20.0",
-    "cli-table3": "0.5.1",
+    "cli-table3": "0.6.0",
     "commander": "6.0.0",
     "traverse": "0.6.6",
     "xml-js": "1.6.11",

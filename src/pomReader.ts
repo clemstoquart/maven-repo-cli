@@ -88,7 +88,7 @@ export class PomReader {
     public async readAndProduceReport(pomPath: string): Promise<void> {
         const pomResponse = await this.pomParser.parse(pomPath);
         if (pomResponse) {
-            this.buildReport(pomResponse.pomObject);
+            await this.buildReport(pomResponse.pomObject);
         }
     }
 }

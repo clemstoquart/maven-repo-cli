@@ -452,10 +452,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:6.2.1":
-  version: 6.2.1
-  resolution: "commander@npm:6.2.1"
-  checksum: 47856aae6f194404122e359d8463e5e1a18f7cbab26722ce69f1379be8514bd49a160ef81a983d3d2091e3240022643354101d1276c797dcdd0b5bfc3c3f04a3
+"commander@npm:7.2.0":
+  version: 7.2.0
+  resolution: "commander@npm:7.2.0"
+  checksum: bdc0eca5e25cd24af8440163d3c9a996785bbac4b49a590365699cdc1ed08cefbac8f268153208ab2bc5dc3cb1d3fb573fd1590c681e36e371342186bd331a4c
   languageName: node
   linkType: hard
 
@@ -1066,7 +1066,7 @@ __metadata:
     "@typescript-eslint/parser": 4.23.0
     axios: 0.21.1
     cli-table3: 0.6.0
-    commander: 6.2.1
+    commander: 7.2.0
     eslint: 7.26.0
     traverse: 0.6.6
     typescript: 4.2.4

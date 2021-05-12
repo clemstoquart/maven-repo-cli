@@ -20,7 +20,7 @@ Compiled to javascript files are available in the `lib` folder.
 
 You can see all available commands running :
 
-    yarn node lib/index.js -help
+    yarn node lib/index.js --help
 
 For example :
 

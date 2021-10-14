@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 import xmlJs from 'xml-js';
 
 interface Latest {
@@ -20,26 +20,20 @@ interface MavenMetadata {
 
 export class MavenCentralClient {
 
-    public async getDependencyVersion(groupId: string, arctifactId: string): Promise<string> {
+    public async getDependencyVersion(groupId: string, artifactId: string): Promise<string> {
         try {
-            const url = `https://repo.maven.apache.org/maven2/${groupId.replace(/\./g, '/')}/${arctifactId}/maven-metadata.xml`;
+            const url = `https://repo.maven.apache.org/maven2/${groupId.replace(/\./g, '/')}/${artifactId}/maven-metadata.xml`;
 
-            const mavenXmlMetadata = await axios.get(url);
+            const { data } = await axios.get<string>(url);
 
-            const mavenMetadata = xmlJs.xml2js(mavenXmlMetadata.data, { compact: true }) as MavenMetadata;
+            const mavenMetadata = xmlJs.xml2js(data, { compact: true }) as MavenMetadata;
 
             return MavenCentralClient.findLatestVersion(mavenMetadata.metadata);
         } catch (error) {
-            if (error.code === 'ENOTFOUND') {
-                console.error(`Can't reach maven repository for ${groupId} ${arctifactId} : ${error}`);
-            }
-
-            if (error.response && error.response.status !== 404) {
-                console.error(`Artifact ${groupId} ${arctifactId} not found`);
-            }
-
-            if (error.message) {
-                console.error(`Error finding version for ${groupId} ${arctifactId} : ${error.message}`);
+            if (axios.isAxiosError(error)) {
+                MavenCentralClient.handleAxiosError(error, groupId, artifactId);
+            } else {
+                console.error(`Unexpected error : ${error}`);
             }
 
             return '';
@@ -51,6 +45,20 @@ export class MavenCentralClient {
             return metadata.versioning.latest._text;
         } else {
             return metadata.version._text;
+        }
+    }
+
+    private static handleAxiosError(error: AxiosError, groupId: string, artifactId: string) {
+        if (error.code === 'ENOTFOUND') {
+            console.error(`Can't reach maven repository for ${groupId} ${artifactId} : ${error}`);
+        }
+
+        if (error.response && error.response.status !== 404) {
+            console.error(`Artifact ${groupId} ${artifactId} not found`);
+        }
+
+        if (error.message) {
+            console.error(`Error finding version for ${groupId} ${artifactId} : ${error.message}`);
         }
     }
 }

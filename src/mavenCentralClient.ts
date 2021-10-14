@@ -53,7 +53,7 @@ export class MavenCentralClient {
             console.error(`Can't reach maven repository for ${groupId} ${artifactId} : ${error}`);
         }
 
-        if (error.response && error.response.status !== 404) {
+        if (error.response?.status !== 404) {
             console.error(`Artifact ${groupId} ${artifactId} not found`);
         }
 

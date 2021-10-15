@@ -389,10 +389,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:7.2.0":
-  version: 7.2.0
-  resolution: "commander@npm:7.2.0"
-  checksum: 53501cbeee61d5157546c0bef0fedb6cdfc763a882136284bed9a07225f09a14b82d2a84e7637edfd1a679fb35ed9502fd58ef1d091e6287f60d790147f68ddc
+"commander@npm:8.2.0":
+  version: 8.2.0
+  resolution: "commander@npm:8.2.0"
+  checksum: e868805bc266777f7a9c8a740e15b9e02b8148d8251f577ea9b9ef373ac0bdeb77b9b60cfc033592c9e1affea89993be08c13c623f0c619f9bf152c0e4d12cb0
   languageName: node
   linkType: hard
 
@@ -995,7 +995,7 @@ __metadata:
     "@typescript-eslint/parser": 5.0.0
     axios: 0.23.0
     cli-table3: 0.6.0
-    commander: 7.2.0
+    commander: 8.2.0
     eslint: 8.0.1
     traverse: 0.6.6
     typescript: 4.4.4

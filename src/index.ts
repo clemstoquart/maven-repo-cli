@@ -1,8 +1,10 @@
-import program from 'commander';
+import { Command } from 'commander';
 import { MavenCentralClient } from './mavenCentralClient';
 import { PomReader } from './pomReader';
 import { Reporter } from './reporter';
 import { PomParser } from './parser/pomParser';
+
+const program = new Command();
 
 program
     .version('1.0.0')
@@ -10,8 +12,8 @@ program
 
 program
     .command('check <groupId> <arctifactId>')
-    .description('Check arctifact version')
-    .action((groupId: string, arctifactId: string) => new MavenCentralClient().getDependencyVersion(groupId, arctifactId)
+    .description('Check artifact version')
+    .action((groupId: string, artifactId: string) => new MavenCentralClient().getDependencyVersion(groupId, artifactId)
         .then((version) => console.log(version)));
 
 program

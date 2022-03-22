@@ -12,9 +12,9 @@
   "license": "MPL-2.0",
   "bin": "./lib/index.js",
   "dependencies": {
-    "axios": "0.23.0",
-    "cli-table3": "0.6.0",
-    "commander": "8.2.0",
+    "axios": "0.26.1",
+    "cli-table3": "0.6.1",
+    "commander": "9.1.0",
     "traverse": "0.6.6",
     "xml-js": "1.6.11",
     "xml2js": "0.4.23"

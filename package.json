@@ -15,7 +15,7 @@
     "axios": "1.1.3",
     "cli-table3": "0.6.3",
     "commander": "9.4.1",
-    "traverse": "0.6.6",
+    "traverse": "0.6.7",
     "xml-js": "1.6.11",
     "xml2js": "0.4.23"
   },

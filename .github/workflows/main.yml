@@ -15,8 +15,10 @@ jobs:
         with:
           node-version: 18
       
-      - name: Install yarn
-        run: npm i -g yarn
+      - name: Setup yarn
+        run: |
+          corepack enable
+          corepack prepare yarn@stable --activate
 
       - run: node --version
       - run: yarn --version

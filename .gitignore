@@ -117,7 +117,12 @@ typings/
 
 .yarn/cache
 .yarn/plugins
+.yarn/sdks
 .yarn/install-state.gz
 .pnp.*
 
+# macOS
 .DS_Store
+
+# VSCode
+.vscode

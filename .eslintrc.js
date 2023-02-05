@@ -1,31 +1,31 @@
 module.exports = {
     parser:  '@typescript-eslint/parser',
     env: {
-        "node": true,
-        "es6": true
+        'node': true,
+        'es6': true
     },
     extends: 'plugin:@typescript-eslint/recommended',
     parserOptions: {
-        ecmaVersion: 2019,
+        ecmaVersion: 2022,
         sourceType: 'module'
     },
     rules: {
-        "indent": [
-            "error",
+        'indent': [
+            'error',
             4
         ],
-        "linebreak-style": [
-            "error",
-            "unix"
+        'linebreak-style': [
+            'error',
+            'unix'
         ],
-        "quotes": [
-            "error",
-            "single"
+        'quotes': [
+            'error',
+            'single'
         ],
-        "semi": [
-            "error",
-            "always"
+        'semi': [
+            'error',
+            'always'
         ],
-        "no-console": 0
+        'no-console': 0
     }
 };

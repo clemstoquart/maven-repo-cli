@@ -9,23 +9,28 @@ on:
       - master
 
 jobs:
-  run-linters:
+  run-linter:
     name: Run linter
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      - name: Setup yarn
+        run: |
+          corepack enable
+          corepack prepare yarn@stable --activate
+      
       - name: Install Node.js dependencies
-        run: npm ci
+        run: yarn install --immutable
 
-      - name: Run linters
+      - name: Run linter
         uses: wearerequired/lint-action@v2
         with:
           eslint: true

@@ -323,27 +323,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.10.0":
-  version: 6.10.0
-  resolution: "ajv@npm:6.10.0"
-  dependencies:
-    fast-deep-equal: ^2.0.1
-    fast-json-stable-stringify: ^2.0.0
-    json-schema-traverse: ^0.4.1
-    uri-js: ^4.2.2
-  checksum: b4c8b35f59e3789557b11efc73e139d9afd3c06172dd0c5b2b9fcd3239bcc399185559611df02f74efe1dc501f7c7561402f000125ba4b3a360cc02df6969144
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^6.12.4":
-  version: 6.12.4
-  resolution: "ajv@npm:6.12.4"
+"ajv@npm:^6.10.0, ajv@npm:^6.12.4":
+  version: 6.12.6
+  resolution: "ajv@npm:6.12.6"
   dependencies:
     fast-deep-equal: ^3.1.1
     fast-json-stable-stringify: ^2.0.0
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
-  checksum: 8713e39b0e29fe0e1d1002438990e78e6804f965218b34bde9651c2c731a44007dae7f7c7136072ca4da4e7ab5ce03c08b806c674d3ad436d808ff363d9c2f9f
+  checksum: 874972efe5c4202ab0a68379481fbd3d1b5d0a7bd6d3cc21d40d3536ebff3352a2a1fabb632d4fd2cc7fe4cbdcd5ed6782084c9bbf7f32a1536d18f9da5007d4
   languageName: node
   linkType: hard
 
@@ -730,13 +718,6 @@ __metadata:
   version: 2.0.2
   resolution: "esutils@npm:2.0.2"
   checksum: d1ad79417f2ad62a7e37c01a6a2767c6d69d991976ed5b0e5ea446dbb758be58a60a892f388db036333b9815a829117a9eb4c881954f9baca2f65c4add3beeb8
-  languageName: node
-  linkType: hard
-
-"fast-deep-equal@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "fast-deep-equal@npm:2.0.1"
-  checksum: b701835a87985e0ec4925bdf1f0c1e7eb56309b5d12d534d5b4b69d95a54d65bb16861c081781ead55f73f12d6c60ba668713391ee7fbf6b0567026f579b7b0b
   languageName: node
   linkType: hard
 

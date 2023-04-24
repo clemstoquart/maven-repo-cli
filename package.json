@@ -20,7 +20,7 @@
     "xml2js": "0.5.0"
   },
   "devDependencies": {
-    "@types/node": "18.15.11",
+    "@types/node": "18.16.0",
     "@types/traverse": "0.6.32",
     "@types/xml2js": "0.4.11",
     "@typescript-eslint/eslint-plugin": "5.58.0",

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Nodejs 18 and Yarn 1.22+ are required.
+Nodejs 20 and Yarn 1.22+ are required.
 
 ## Setup
 
@@ -11,7 +11,7 @@ Nodejs 18 and Yarn 1.22+ are required.
 ### Editor setup
 
 For VSCode : https://yarnpkg.com/getting-started/editor-sdks#vscode
-    
+
 ## Build
 
 Sources are written in typescript so a compilation step is required :

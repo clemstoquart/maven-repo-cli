@@ -13,8 +13,8 @@ jobs:
       - name: Set Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-      
+          node-version: 20
+
       - name: Setup yarn
         run: |
           corepack enable

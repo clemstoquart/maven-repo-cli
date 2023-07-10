@@ -33,7 +33,8 @@ export class MavenCentralClient {
             if (axios.isAxiosError(error)) {
                 MavenCentralClient.handleAxiosError(error, groupId, artifactId);
             } else {
-                console.error(`Unexpected error : ${error}`);
+                console.error('Unexpected error');
+                console.error(error);
             }
 
             return '';
@@ -50,7 +51,8 @@ export class MavenCentralClient {
 
     private static handleAxiosError(error: AxiosError, groupId: string, artifactId: string) {
         if (error.code === 'ENOTFOUND') {
-            console.error(`Can't reach maven repository for ${groupId} ${artifactId} : ${error}`);
+            console.error(`Can't reach maven repository for ${groupId} ${artifactId}`);
+            console.error(error);
         }
 
         if (error.response?.status !== 404) {

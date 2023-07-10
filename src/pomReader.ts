@@ -18,7 +18,7 @@ interface DependencyManagement {
 
 interface Project {
     parent: Dependency;
-    properties: Record<string, unknown>;
+    properties: Record<string, string>;
     dependencymanagement: DependencyManagement;
     dependencies: Dependencies;
 }
@@ -44,9 +44,9 @@ export class PomReader {
     }
 
     private static buildExternalVersionsMap(pomObject: Pom): Map<string, string> {
-        const versionsMap = new Map();
+        const versionsMap = new Map<string, string>();
         for (const [key, value] of Object.entries(pomObject.project.properties)) {
-            versionsMap.set(`\$\{${key}\}`, value);
+            versionsMap.set(`$\{${key}}`, value);
         }
         return versionsMap;
     }

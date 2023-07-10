@@ -19,6 +19,6 @@ program
 program
     .command('checkPom <pomPath>')
     .description('Check all artifacts and report outdated ones')
-    .action(pomPath => new PomReader(new MavenCentralClient(), new Reporter(), new PomParser()).readAndProduceReport(pomPath));
+    .action((pomPath: string) => new PomReader(new MavenCentralClient(), new Reporter(), new PomParser()).readAndProduceReport(pomPath));
 
 program.parse(process.argv);

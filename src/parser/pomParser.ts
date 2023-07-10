@@ -26,8 +26,8 @@ export class PomParser {
             const xmlContent = await fs.readFile(filePath, 'utf8');
 
             return await this.parseWithXml2js(xmlContent);
-        } catch (err) {
-            console.log(`ERROR: ${err}`);
+        } catch (error) {
+            console.error(error);
             return process.exit(1);
         }
     }
@@ -45,11 +45,13 @@ export class PomParser {
                     reject(err);
                 }
 
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
                 this.removeSingleArrays(pomObject);
 
                 // Response to the call
                 resolve({
                     pomXml: xmlContent, // Only add the pomXml when loaded from the file-system.
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                     pomObject: pomObject // Always add the object
                 });
             });

@@ -20,12 +20,12 @@
     "xml2js": "0.6.2"
   },
   "devDependencies": {
-    "@types/node": "20.4.5",
+    "@types/node": "20.5.0",
     "@types/traverse": "0.6.32",
     "@types/xml2js": "0.4.11",
-    "@typescript-eslint/eslint-plugin": "6.2.1",
-    "@typescript-eslint/parser": "6.2.1",
-    "eslint": "8.46.0",
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "@typescript-eslint/parser": "6.4.0",
+    "eslint": "8.47.0",
     "typescript": "5.1.6"
   },
   "packageManager": "yarn@3.6.1"

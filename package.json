@@ -24,7 +24,7 @@
     "@types/traverse": "0.6.33",
     "@types/xml2js": "0.4.12",
     "@typescript-eslint/eslint-plugin": "6.7.0",
-    "@typescript-eslint/parser": "6.7.0",
+    "@typescript-eslint/parser": "6.7.2",
     "eslint": "8.49.0",
     "typescript": "5.2.2"
   },

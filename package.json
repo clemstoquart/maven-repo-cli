@@ -20,13 +20,13 @@
     "xml2js": "0.6.2"
   },
   "devDependencies": {
-    "@types/node": "20.8.4",
-    "@types/traverse": "0.6.33",
-    "@types/xml2js": "0.4.12",
-    "@typescript-eslint/eslint-plugin": "6.7.5",
-    "@typescript-eslint/parser": "6.7.5",
-    "eslint": "8.51.0",
+    "@types/node": "20.8.7",
+    "@types/traverse": "0.6.34",
+    "@types/xml2js": "0.4.13",
+    "@typescript-eslint/eslint-plugin": "6.8.0",
+    "@typescript-eslint/parser": "6.8.0",
+    "eslint": "8.52.0",
     "typescript": "5.2.2"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.0.0"
 }

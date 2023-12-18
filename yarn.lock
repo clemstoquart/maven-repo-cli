@@ -188,10 +188,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/traverse@npm:0.6.35":
-  version: 0.6.35
-  resolution: "@types/traverse@npm:0.6.35"
-  checksum: 73cc6e4f0597a1cdaf1065c66cddddf8e2534420557127d46282e1a0c42afd6df044677a305bff1ef9407242d585d75c4188cb5d05fac15b9847d4b12aa3e388
+"@types/traverse@npm:0.6.36":
+  version: 0.6.36
+  resolution: "@types/traverse@npm:0.6.36"
+  checksum: 34d01e1209d524f294827ab1f5f23cadd51a1934fc13b5722650a8edfffe8f0d20620b44ccbe0a109aa7ffba3b621decc996e7a1f0e05a4735f8199adec1fd21
   languageName: node
   linkType: hard
 
@@ -1088,7 +1088,7 @@ __metadata:
   resolution: "maven-repo-cli@workspace:."
   dependencies:
     "@types/node": "npm:20.10.4"
-    "@types/traverse": "npm:0.6.35"
+    "@types/traverse": "npm:0.6.36"
     "@types/xml2js": "npm:0.4.14"
     "@typescript-eslint/eslint-plugin": "npm:6.14.0"
     "@typescript-eslint/parser": "npm:6.14.0"

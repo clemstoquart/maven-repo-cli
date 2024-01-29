@@ -129,12 +129,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.11.3":
-  version: 20.11.3
-  resolution: "@types/node@npm:20.11.3"
+"@types/node@npm:20.11.10":
+  version: 20.11.10
+  resolution: "@types/node@npm:20.11.10"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: dff64333435bbda87e200e24e2103f40692d0a01849db685ecb31db7c589f2556843a03dd351ddaee9981020263939c026557b36df49154efd910c610deefe78
+  checksum: 41ca9c7e7c95bf070ad747ab266f267f41950e01f5ddda739d0665c2ed39acc45cce46f78e33ffa2bf2dacd74a8493044b967c86358017dacce12958e49db664
   languageName: node
   linkType: hard
 
@@ -1001,7 +1001,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "maven-repo-cli@workspace:."
   dependencies:
-    "@types/node": "npm:20.11.3"
+    "@types/node": "npm:20.11.10"
     "@types/traverse": "npm:0.6.36"
     "@types/xml2js": "npm:0.4.14"
     "@typescript-eslint/eslint-plugin": "npm:6.20.0"

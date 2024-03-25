@@ -421,16 +421,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-table3@npm:0.6.3":
-  version: 0.6.3
-  resolution: "cli-table3@npm:0.6.3"
+"cli-table3@npm:0.6.4":
+  version: 0.6.4
+  resolution: "cli-table3@npm:0.6.4"
   dependencies:
     "@colors/colors": "npm:1.5.0"
     string-width: "npm:^4.2.0"
   dependenciesMeta:
     "@colors/colors":
       optional: true
-  checksum: 10/8d82b75be7edc7febb1283dc49582a521536527cba80af62a2e4522a0ee39c252886a1a2f02d05ae9d753204dbcffeb3a40d1358ee10dccd7fe8d935cfad3f85
+  checksum: 10/f610294fce327b1b36c40f7475f18d166f907627cab7991b35d233b8bf6e182a0d0753b5bab2d4c8571aea64ff880ff11334cef4e5eb0cee8a4b4b5fcd661486
   languageName: node
   linkType: hard
 
@@ -1007,7 +1007,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:7.3.0"
     "@typescript-eslint/parser": "npm:7.3.0"
     axios: "npm:1.6.8"
-    cli-table3: "npm:0.6.3"
+    cli-table3: "npm:0.6.4"
     commander: "npm:12.0.0"
     eslint: "npm:8.57.0"
     traverse: "npm:0.6.8"

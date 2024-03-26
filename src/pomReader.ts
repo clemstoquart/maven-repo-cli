@@ -73,7 +73,7 @@ export class PomReader {
 
         for (const [index, dependency] of allPomDependencies.entries()) {
             let currentVersion: string | undefined = dependency.version;
-            if (currentVersion && currentVersion.includes('${')) {
+            if (currentVersion?.includes('${')) {
                 currentVersion = versionByArtifactId.get(dependency.version);
             }
 

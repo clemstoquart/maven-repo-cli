@@ -958,15 +958,13 @@ __metadata:
     "@types/node": "npm:20.12.2"
     "@types/traverse": "npm:0.6.36"
     "@types/xml2js": "npm:0.4.14"
-    "@typescript-eslint/eslint-plugin": "npm:7.7.0"
-    "@typescript-eslint/parser": "npm:7.7.0"
     axios: "npm:1.6.8"
     cli-table3: "npm:0.6.4"
     commander: "npm:12.0.0"
     eslint: "npm:9.0.0"
     traverse: "npm:0.6.8"
     typescript: "npm:5.4.5"
-    typescript-eslint: "npm:^7.7.0"
+    typescript-eslint: "npm:7.7.0"
     xml-js: "npm:1.6.11"
     xml2js: "npm:0.6.2"
   bin:
@@ -1277,7 +1275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^7.7.0":
+"typescript-eslint@npm:7.7.0":
   version: 7.7.0
   resolution: "typescript-eslint@npm:7.7.0"
   dependencies:

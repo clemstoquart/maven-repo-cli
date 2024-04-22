@@ -54,13 +54,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.0.0":
-  version: 9.0.0
-  resolution: "@eslint/js@npm:9.0.0"
-  checksum: 10/b14b20af72410ef53e3e77e7d83cc1d6e6554b0092ceb9f969d25d765f4d775b4be32b0cd99bbfd6ce72eb2e4fb6b39b42a159b31909fbe1b3a5e88d75211687
-  languageName: node
-  linkType: hard
-
 "@eslint/js@npm:9.1.1":
   version: 9.1.1
   resolution: "@eslint/js@npm:9.1.1"
@@ -1440,7 +1433,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "maven-repo-cli@workspace:."
   dependencies:
-    "@eslint/js": "npm:9.0.0"
+    "@eslint/js": "npm:9.1.1"
     "@types/node": "npm:20.12.7"
     "@types/traverse": "npm:0.6.36"
     "@types/xml2js": "npm:0.4.14"

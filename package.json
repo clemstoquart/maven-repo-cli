@@ -27,7 +27,7 @@
     "@types/xml2js": "0.4.14",
     "eslint": "9.6.0",
     "typescript": "5.5.3",
-    "typescript-eslint": "7.15.0"
+    "typescript-eslint": "7.16.0"
   },
   "packageManager": "yarn@4.3.1"
 }

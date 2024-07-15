@@ -145,10 +145,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/traverse@npm:0.6.36":
-  version: 0.6.36
-  resolution: "@types/traverse@npm:0.6.36"
-  checksum: 10/34d01e1209d524f294827ab1f5f23cadd51a1934fc13b5722650a8edfffe8f0d20620b44ccbe0a109aa7ffba3b621decc996e7a1f0e05a4735f8199adec1fd21
+"@types/traverse@npm:0.6.37":
+  version: 0.6.37
+  resolution: "@types/traverse@npm:0.6.37"
+  checksum: 10/f66e812a22d4ee2e10d936400cefba581d90a509bc5278699ed9bbdc18bd9ba7c926883d3a55d4c97f4b5a021b55bce5bd1d5eec8f2b5203419f1584ce60b126
   languageName: node
   linkType: hard
 
@@ -1443,7 +1443,7 @@ __metadata:
   dependencies:
     "@eslint/js": "npm:9.7.0"
     "@types/node": "npm:20.14.8"
-    "@types/traverse": "npm:0.6.36"
+    "@types/traverse": "npm:0.6.37"
     "@types/xml2js": "npm:0.4.14"
     axios: "npm:1.7.2"
     cli-table3: "npm:0.6.5"

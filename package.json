@@ -13,7 +13,7 @@
   "license": "MPL-2.0",
   "bin": "./lib/index.js",
   "dependencies": {
-    "axios": "1.7.3",
+    "axios": "1.7.4",
     "cli-table3": "0.6.5",
     "commander": "12.1.0",
     "traverse": "0.6.9",

@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.10.0",
-    "@types/node": "22.5.2",
+    "@types/node": "22.5.4",
     "@types/traverse": "0.6.36",
     "@types/xml2js": "0.4.14",
     "eslint": "9.10.0",

@@ -211,12 +211,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.17":
-  version: 22.15.17
-  resolution: "@types/node@npm:22.15.17"
+"@types/node@npm:22.15.19":
+  version: 22.15.19
+  resolution: "@types/node@npm:22.15.19"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/3f5870ec1ac16b1dd8e5817de81164df9b69e4cf19cce692cb7c9b1af1deaecfd98b591b56155fcc4aa582f7189a4fc0c8d7d3226fa0387403db615a12dd8cb6
+  checksum: 10/02311c2b5dbf2e9e2c17497dc27858bcefbe12a81af0d9b81f865613d8d014726e0eb6cbebfbdb84a327c1b9f9da1347a65a7699ac58c8854fb4daf447031149
   languageName: node
   linkType: hard
 
@@ -1966,7 +1966,7 @@ __metadata:
   resolution: "maven-repo-cli@workspace:."
   dependencies:
     "@eslint/js": "npm:9.27.0"
-    "@types/node": "npm:22.15.17"
+    "@types/node": "npm:22.15.19"
     "@types/traverse": "npm:0.6.36"
     "@types/xml2js": "npm:0.4.14"
     axios: "npm:1.9.0"
